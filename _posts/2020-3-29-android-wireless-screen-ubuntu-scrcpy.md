@@ -1,3 +1,5 @@
+
+
 # 安卓Ubuntu 18.04 lts投屏scrcpy方法
 
 scrcpy是screen copy的简写，是一个免费的开源软件，通过命令行和快捷键执行，实现安卓设备向电脑的高清投屏。我个人体验，感觉操作方便简洁，相当nice
@@ -20,7 +22,7 @@ scrcpy是screen copy的简写，是一个免费的开源软件，通过命令行
 
 **无论是第一次，还是第一次以后，都首先，把安卓设备那三步操作完成。**
 
-##### 第一次，安装并配置adb服务
+ 第一次，安装并配置adb服务
 
 ```bash
 sudo apt-get install android-tools-adb
@@ -89,7 +91,7 @@ adb start-server
 adb devices
 ```
 
-2.安装scrcpy    github仓库[https://github.com/Genymobile/scrcpy]:
+2.安装scrcpy    [github仓库](https://github.com/Genymobile/scrcpy)
 
 for linux
 
@@ -117,31 +119,19 @@ scrcpy
 scrcpy --help
 ```
 
+
+
 3.scrcpy无线投屏方式
 
 - 将手机和电脑连接到同一个wifi
-
 - 查看手机IP地址(设置-关于手机-设备状态)
-
 - 开启adb TCP/IP 
-
-- ```bash
-  adb tcpip 5555
-  ```
-
+- `adb tcpip 5555`
 - 拔掉手机
-
 - 无线连接手机
-
-- ```bash
-  adb connect DEVICE_IP:5555
-  ```
-
+- `adb connect DEVICE_IP:5555`
 - 重新运行scrcpy
-
-- ```bash
-  scrcpy
-  ```
+- `scrcpy`
 
 全屏投放
 
