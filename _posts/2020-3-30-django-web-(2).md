@@ -346,8 +346,6 @@ urlpatterns = [
 
 利用刚才建立的admin账户，登陆admin，你将看到如下的界面：
 
-![https://github.com/zuizao/markdownpic/raw/master/admin.jpg]()
-
 当前只有两个可编辑的内容：groups和users。它们是`django.contrib.auth`模块提供的身份认证框架。
 
 4.在admin中注册投票应用
@@ -364,8 +362,6 @@ admin.site.register(Question)
 ```
 
 注册question模型后，刷新admin页面就能看到Question栏目了。
-
-![https://github.com/zuizao/markdownpic/raw/master/admin2.jpg]()
 
 点击“Questions”，进入questions的修改列表页面。这个页面会显示所有的数据库内的questions对象，你可以在这里对它们进行修改。看到下面的`“What’s up?”`了么？它就是我们先前创建的一个question对象，并且通过`__str__`方法的帮助，显示了较为直观的信息，而不是一个冷冰冰的对象类型名称。
 
